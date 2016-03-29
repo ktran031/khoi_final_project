@@ -26,7 +26,7 @@
 
 		a:hover {
 			text-decoration: none;
-			border-bottom: 1px solid #fff;			
+			border-bottom: 1px solid #000;			
 		}
 
 	strong, b {
@@ -280,11 +280,11 @@
     -webkit-margin-start: auto;
     -webkit-margin-end: auto;
     border-style: inset;
-    border-width: 1px;
+    border-width: 1.5px;
 	}
 
 	.logo a:hover {
-		border-bottom: 1px solid #fff;
+		border-bottom: 1px solid #000;
 	}
 
 	
@@ -393,13 +393,13 @@
 		}
 
 			#header.alt h1 {
-				color: #ffffff;
+				color: #000;
 				left: 1.5em;
    				 top: 0em;
 			}
 
 				#header.alt h1 a {
-					color: #ffffff;
+					color: #000;
 				}
 
 			#header.alt nav {
@@ -413,7 +413,7 @@
 
 					#header.alt nav a:active, #header.alt nav a:hover {
 						color: #000;
-						border-bottom: 1px solid #fff;
+						border-bottom: 1px solid #000;
 					}
 
 			#header.alt .button {
@@ -438,7 +438,7 @@
 		}
 
 		#banner h2 {
-			color: #ffffff;
+			color: #000;
 			display: inline-block;
 			font-size: 3.5em;
 			line-height: 0.25;
@@ -446,7 +446,7 @@
 		}
 
 		#banner p {
-			color: #fff;
+			color: #000;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
@@ -460,16 +460,30 @@
 /*About*/
 
 #about {
-	background: #b2a9a9;
+	background-image: url("images/overlay.png"), url("../images/pic01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color: white;
+    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    text-align: center;
     padding: 1% 0;
-/*    opacity: 0.8;
-*/    color: #000;
+}
+
+#about h2 {
+	color: #fff;
+}
+
+#about img {
+	border-radius: 50%;
+
 }
 
 /*Projects Section */
 
 .projects {
-	background-image: url("images/overlay.png"), url("../images/pic01.jpg");
+	background-image: url("images/overlay.png"), url("../images/pic03.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -533,6 +547,7 @@
 
 /* Footer */
 	#footer {
+
 		padding: 8em 0 6em 0;
 		color: #aaa;
 		text-align: center;
