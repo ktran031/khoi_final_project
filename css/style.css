@@ -604,6 +604,7 @@
 					padding-left: 0;
 				}
 
+/*Video*/
 
 .fullscreen-bg {
     position: fixed;
@@ -622,4 +623,80 @@
     left: 0;
    	min-width: 100%;
     min-height: 100%;
+}
+
+
+/*Mobile Goes Here*/
+
+/* Mobile nav button container */
+
+.mobile-nav-button {
+    width: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right; 
+    background: #000;
+    cursor: pointer; /* This forces the mouse to render as a pointer (hand) when hovering over the element */
+    display: none;
+}
+
+/* creates a line for the hamburger nav */
+.line {
+  height:7px;
+  width:60%;
+  margin:5px auto;
+  border-radius:5px;
+  background: #fff;
+  border: none;
+  transition: .25s transform; /* transitions the transform properties */
+}
+
+.active .top {
+  background: #000;
+}
+
+.active .middle {
+  /* Rotates the line by 45deg */
+    transform: rotate(45deg); 
+}
+
+.active .bottom {
+  /* Moves the line up by 11px and rotates it by 45deg */
+  transform: translate(0, -11px) rotate(-45deg);
+}
+
+/* Hide mobile nav in normal view */
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav li {
+  display: none;
+}
+
+/*Responsive Design*/
+
+@media only screen and (max-width: 768px) {
+
+  
+  .desktop-nav li {
+    display: none;
+  }
+
+  button {
+    width: 100%;
+  }
+	footer {
+    width: 100%;
+  }
+	.mobile-nav-button {
+    display: block;
+  }
+
+  .mobile-nav li {
+    background-color: #033048;
+    border-top: none;
+    display: inline-block;
+  }
+
 }
